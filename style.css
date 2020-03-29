@@ -1,0 +1,362 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.white-text {
+    color: white
+}
+
+.dark-bgc {
+    background-color: #35424A;
+}
+
+
+/* ********************* HEADER ********************* */
+
+header {
+    display: flex;
+    padding: 31px 11% 31px 9%;
+    border-bottom: 3px solid #E8491D;
+    justify-content: space-between;
+}
+
+header>p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+header span {
+    color: #E8491D;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+nav a {
+    margin: 0 20px;
+    text-transform: uppercase;
+    /*this prevents home button from moving when hovering over ABOUT */
+    min-width: 60px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(161, 161, 161);
+    font-weight: 600;
+}
+
+.active-page {
+    color: #E8491D;
+    font-weight: 600;
+}
+
+
+/* **************************************** */
+
+
+/* *************** MAIN ****************** */
+
+
+/* *************** SHOWCASE *************** */
+
+#showcase {
+    background-image: url(result/img/showcase.jpg);
+    background-position: center left;
+    text-align: center;
+    padding: 110px 120px 0 120px;
+    min-height: 400px;
+}
+
+#showcase h1 {
+    font-size: 3.3rem;
+    letter-spacing: 0.1rem;
+    padding-bottom: 30px;
+}
+
+#showcase p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+    margin: 0 20px 0 20px;
+}
+
+
+/* *************** subscribeBar *************** */
+
+#subscribeBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 31px 13% 31px 9%;
+}
+
+#subscribeBar p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#subscribeBar input {
+    padding: 10px 0 10px 4px;
+    min-width: 250px;
+}
+
+#subscribeBar button {
+    background-color: #E8491D;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#subscribeBar button:hover {
+    background-color: rgb(255, 103, 61);
+}
+
+
+/* *************** gallery *************** */
+
+#gallery {
+    padding: 40px 10%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+#gallery img {
+    height: 100px;
+}
+
+#gallery h2 {
+    font-size: 1rem;
+    line-height: 50px;
+}
+
+#gallery div {
+    max-width: 350px;
+    margin: 0 20px;
+    line-height: 1.2rem;
+}
+
+
+/* *************** About us *************** */
+
+#about-us {
+    margin: 1.2rem auto;
+    width: 82%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#about-us article {
+    width: 63%;
+}
+
+#about-us article h3 {
+    margin-bottom: 1rem;
+}
+
+#about-us article p {
+    text-align: justify;
+    margin-bottom: 1rem;
+    word-spacing: 0.1rem;
+    line-height: 1.3rem;
+}
+
+#about-us article p[class^="dark-bgc"] {
+    padding: 1rem;
+}
+
+#about-us aside {
+    width: 30%;
+    padding: 1rem 1rem;
+    height: fit-content;
+}
+
+#about-us aside h3 {
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+#about-us aside p {
+    line-height: 1.4rem;
+    padding-bottom: 1rem;
+}
+
+
+/* *************** Services *************** */
+
+#services-container {
+    width: 80%;
+    display: flex;
+    margin: 1rem auto;
+    justify-content: space-between;
+}
+
+#services-container section {
+    width: 65%;
+}
+
+#services-container section h3 {
+    margin-bottom: 1rem;
+}
+
+.service-box {
+    background-color: #E6E6E6;
+    border: 1px solid #CCCCCC;
+    padding: 2rem 1rem;
+    line-height: 1.5rem;
+    margin: 5px 0;
+}
+
+.service-box p:last-child {
+    margin-top: 1rem;
+}
+
+#send-msg {
+    width: 30%;
+    height: fit-content;
+    padding: 1rem;
+    line-height: 1.4rem;
+}
+
+#send-msg h3 {
+    text-transform: capitalize;
+    line-height: 4rem;
+}
+
+#send-msg input {
+    width: 95%;
+    padding: 0.2rem;
+}
+
+#input-msg {
+    padding: 0.3rem;
+    resize: vertical;
+    overflow: auto;
+    width: 95%;
+    min-height: 3rem;
+}
+
+#send-btn {
+    padding: 0.6rem 1.4rem;
+    background-color: #E8491D;
+    border: none;
+}
+
+
+/* **************************************** */
+
+
+/* *************** FOOTER ****************** */
+
+footer {
+    background-color: #E8491D;
+    text-align: center;
+    padding: 25px;
+    word-spacing: 0.2rem;
+}
+
+@media (max-width: 900px) {
+    #subscribeBar {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+    #subscribeBar form {
+        text-align: center;
+    }
+    #subscribeBar p {
+        padding-bottom: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        width: 100%;
+        padding-top: 1rem;
+        justify-content: center;
+    }
+    #showcase {
+        padding: 50px 30px 20px 30px;
+        min-height: auto;
+    }
+    #services-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    #services-container h3 {
+        text-align: center;
+    }
+    #services-container section {
+        width: 90%;
+    }
+    #send-msg {
+        width: 90%;
+        text-align: center;
+    }
+    #send-msg input,
+    #input-msg {
+        width: 95%;
+    }
+    #send-msg button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    #gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    #gallery div {
+        max-width: 90%;
+        margin-bottom: 2rem;
+    }
+    #about-us {
+        flex-wrap: wrap;
+    }
+    #about-us article,
+    #about-us aside {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    #subscribeBar form>* {
+        width: 95%;
+    }
+}
+
+@media (max-width: 400px) {
+    #showcase h1 {
+        font-size: 2rem;
+    }
+    header {
+        padding: 10px 0;
+    }
+    nav {
+        flex-wrap: wrap;
+    }
+    nav a {
+        padding-top: 1rem;
+    }
+}
